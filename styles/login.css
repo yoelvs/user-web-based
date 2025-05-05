@@ -1,0 +1,40 @@
+body {
+    background: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    color: #573b8a;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .btn-primary {
+    background-color: #573b8a;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #452a6a;
+  }
+  
+  /* Additional styling for form spacing */
+  form .form-label {
+    font-weight: bold;
+  }
+  
+  /* Portfolio specific styles */
+  #portfolio img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  #portfolio .card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+  }

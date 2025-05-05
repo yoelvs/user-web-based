@@ -1,0 +1,108 @@
+body {
+  background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h2 {
+  color: #573b8a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+}
+
+.form-check-input {
+  margin-right: 8px;
+}
+
+button[type="submit"], button[type="button"] {
+  font-weight: bold;
+  background-color: #573b8a;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+  background-color: #452a6a;
+}
+
+.mt-3 {
+  margin-top: 20px;
+}
+
+.text-center a {
+  color: #573b8a;
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  color: #452a6a;
+}
+
+/* Additional styling for form spacing */
+form .form-label {
+  font-weight: bold;
+}
+
+/* File input styling */
+input[type="file"] {
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+/* Checkbox styling */
+.form-check {
+  margin-bottom: 15px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 576px) {
+  .card {
+      padding: 20px;
+  }
+
+  .form-control {
+      font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+      font-size: 1rem;
+      padding: 10px;
+  }
+}
