@@ -1,0 +1,115 @@
+body {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('../media/neda-astani-KWTkd7mHqKE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.weather-window {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  max-width: 1000px; /* Max width of the window */
+  width: 90%; /* Window width 90% */
+  margin: 1% auto; /* Center the window on the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card0 {
+  width: 100%;
+}
+
+.card1 {
+  background-image: linear-gradient(rgba(33, 150, 243, 0.05), rgba(129, 212, 250,0.05 ));
+  padding: 30px 20px 30px 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+
+
+.card2 {
+  background-color: #607D8B;
+  padding: 0px 0px 40px 40px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+}
+
+.large-font {
+  font-size: 70px;
+}
+
+.fa-sun-o {
+  font-size: 22px;
+}
+
+input {
+  background-color: #607D8B;
+  padding: 24px 0px 12px 0px !important;
+  width: 80%;
+  box-sizing: border-box;
+  border: none !important;
+  border-bottom: 1px solid #CFD8DC !important;
+  font-size: 16px !important;
+  color: #fff !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+  border-bottom: 1px solid #fff !important;
+  outline-width: 0;
+  font-weight: 400;
+}
+
+::placeholder {
+  color: #B0BEC5 !important;
+  opacity: 1;
+}
+
+.fa-search {
+  color: #607D8B;
+  background-color: #E1F5FE;
+  font-size: 20px;
+  padding: 20px;
+  width: 20%;
+  cursor: pointer;
+}
+
+.light-text {
+  color: #B0BEC5;
+}
+
+.suggestion:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  background-color: #B0BEC5;
+}
+
+@media screen and (max-width: 500px) {
+  .card1 {
+    padding-left: 26px;
+  }
+
+  .large-font {
+    font-size: 50px; /* Reduce the font size on small screens */
+  }
+}
+
