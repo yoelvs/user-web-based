@@ -3,61 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Currency Converter</title>
+  <title>Exchange Rate</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/currency-flags/3.4.0/currency-flags.min.css">
+  <link rel="stylesheet" href="../styles/exchange.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/currency-flags/3.1.0/css/currency-flags.min.css" />
   <link rel="stylesheet" href="../styles/ExchangeRate.css">
 </head>
 <body>
-  <div class="converter-box">
-    <h3 class="text-center mb-4">💱 Currency Converter</h3>
+  <div class="container d-flex align-items-center justify-content-center vh-100">
+    <div class="card p-4 shadow" style="max-width: 600px; width: 100%;">
+      <h2 class="text-center mb-4">Currency Converter</h2>
 
-    <div class="mb-3">
-      <label for="amount" class="form-label">Amount</label>
-      <input type="number" id="amount" class="form-control" placeholder="Enter amount" min="0" required />
-    </div>
-
-    <div class="mb-3">
-      <label for="fromCurrency" class="form-label">From</label>
-      <div class="input-group">
-        <span class="input-group-text"><span id="fromFlag" class="currency-flag currency-flag-usd"></span></span>
-        <select id="fromCurrency" class="form-select" onchange="updateFlags()">
-          <option value="USD">USD - US Dollar</option>
-          <option value="EUR">EUR - Euro</option>
-          <option value="GBP">GBP - British Pound</option>
-          <option value="ILS">ILS - Israeli Shekel</option>
-          <option value="JPY">JPY - Japanese Yen</option>
-          <option value="CAD">CAD - Canadian Dollar</option>
-          <option value="AUD">AUD - Australian Dollar</option>
-          <option value="SAR">SAR - Saudi Riyal</option>
-          <option value="INR">INR - Indian Rupee</option>
-        </select>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="fromCurrency" class="form-label">Base Currency</label>
+          <select id="fromCurrency" class="form-select" required>
+            <option value="">Select a base currency</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="toCurrency" class="form-label">Target Currency</label>
+          <select id="toCurrency" class="form-select" required>
+            <option value="">Select a target currency</option>
+          </select>
+        </div>
       </div>
-    </div>
 
-    <div class="mb-3">
-      <label for="toCurrency" class="form-label">To</label>
-      <div class="input-group">
-        <span class="input-group-text"><span id="toFlag" class="currency-flag currency-flag-eur"></span></span>
-        <select id="toCurrency" class="form-select" onchange="updateFlags()">
-          <option value="USD">USD - US Dollar</option>
-          <option value="EUR">EUR - Euro</option>
-          <option value="GBP">GBP - British Pound</option>
-          <option value="ILS">ILS - Israeli Shekel</option>
-          <option value="JPY">JPY - Japanese Yen</option>
-          <option value="CAD">CAD - Canadian Dollar</option>
-          <option value="AUD">AUD - Australian Dollar</option>
-          <option value="SAR">SAR - Saudi Riyal</option>
-          <option value="INR">INR - Indian Rupee</option>
-        </select>
+      <div class="row mb-3 text-center">
+        <div class="col-md-6">
+          <span id="fromFlag" class="currency-flag currency-flag-usd" style="font-size: 2em;"></span>
+        </div>
+        <div class="col-md-6">
+          <span id="toFlag" class="currency-flag currency-flag-eur" style="font-size: 2em;"></span>
+        </div>
       </div>
+
+      <div class="mb-3">
+        <label for="amount" class="form-label">Amount</label>
+        <input type="text" id="amount" class="form-control" min="0" placeholder="Enter amount" />
+      </div>
+
+      <div class="d-grid mb-3">
+        <button class="btn btn-primary" onclick="convertCurrency()">Convert</button>
+      </div>
+
+      <div id="result" class="text-center fw-bold mt-2"></div>
     </div>
-
-    <button class="btn btn-primary w-100" onclick="convertCurrency()">Convert</button>
-
-    <div class="result-box" id="result"></div>
   </div>
+
   <script src="../scripts/ExchangeRate.js"></script>
 </body>
 </html>
