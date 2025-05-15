@@ -167,22 +167,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const skillsArray = user.skills; // ← שים לב לשינוי כאן
 
-const jsLogo = "/vecteezy_3d-javascript-logo-design_12697298.png";
+const jsLogo = "/user-web-based/vecteezy_3d-javascript-logo-design_12697298.png";
 
 const skillLogos = {
   javascript: jsLogo,
   js: jsLogo,
   JS: jsLogo,
-  java: "/vecteezy_cup-of-coffee-with-a-flame-on-top_54484941.png",
-  react: "/standout-art-deco-symmetrical-silhouette-of-an-atom-symbol-clean-lines-minimal-design-with-scalable-design-ultra-hd-free-png.webp",
-  python: "/vecteezy_3d-python-programming-language-logo_12697295.png",
-  html: "/vecteezy_stylized-3d-html-logo-design_12697299.png",
-  css: "/vecteezy_stylized-3d-css-icon-side-view_11665094.png",
-  nodejs: "/vecteezy_node-js-framework-3d-icon-transparent-background_60194950.png",
-  typescript: "/vecteezy_typescript-programming-language-3d-icon-transparent-background_60194946.png",
-  c: "/vecteezy_c-programming-icon_48332147.png",
-  "c#": "/vecteezy_c-sharp-programming-language-3d-icon-transparent-background_60194935.png",
-  "c++": "/vecteezy_3d-c-programming-language-logo_12697300.png",
+  java: "/user-web-based/vecteezy_cup-of-coffee-with-a-flame-on-top_54484941.png",
+  react: "/user-web-based/standout-art-deco-symmetrical-silhouette-of-an-atom-symbol-clean-lines-minimal-design-with-scalable-design-ultra-hd-free-png.webp",
+  python: "/user-web-based/vecteezy_3d-python-programming-language-logo_12697295.png",
+  html: "/user-web-based/vecteezy_stylized-3d-html-logo-design_12697299.png",
+  css: "/user-web-based/vecteezy_stylized-3d-css-icon-side-view_11665094.png",
+  nodejs: "/user-web-based/vecteezy_node-js-framework-3d-icon-transparent-background_60194950.png",
+  typescript: "/user-web-based/vecteezy_typescript-programming-language-3d-icon-transparent-background_60194946.png",
+  c: "/user-web-based/vecteezy_c-programming-icon_48332147.png",
+  "c#": "/user-web-based/vecteezy_c-sharp-programming-language-3d-icon-transparent-background_60194935.png",
+  "c++": "/user-web-based/vecteezy_3d-c-programming-language-logo_12697300.png",
 };
 
 
