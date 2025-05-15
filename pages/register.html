@@ -32,7 +32,7 @@
           </div>          
           <div class="mb-3">
             <label for="age" class="form-label">Age</label>
-            <input type="number" id="age" class="form-control" required/>
+            <input type="text" id="age" class="form-control" required/>
           </div>
           <div class="mb-3">
             <label for="Phone" class="form-label">Phone</label>
@@ -75,12 +75,17 @@
           </div>
           <div class="mb-3">
             <label for="baseCurrency" class="form-label">Base Currency</label>
-            <input type="text" id="baseCurrency" class="form-control"/>
+            <select id="baseCurrency" class="form-select" required>
+              <option value="">Select base currency</option>
+            </select>
           </div>
           <div class="mb-3">
             <label for="targetCurrency" class="form-label">Target Currency</label>
-            <input type="text" id="targetCurrency" class="form-control"/>
+            <select id="targetCurrency" class="form-select" required>
+              <option value="">Select target currency</option>
+            </select>
           </div>
+          
           
           <div class="mb-3">
             <label for="picture" class="form-label">Profile Picture</label>

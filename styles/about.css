@@ -1,0 +1,438 @@
+/* About Section Styles */
+.about-page {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #34b7a7;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+    color: #666;
+  }
+  
+  /* About Content Styles */
+  .about .content h2 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+    min-width: 90px;
+    display: inline-block;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #34b7a7;
+    line-height: 0;
+  }
+  
+  /* Skills Section Styles */
+  .skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .skills .progress .skill span {
+    float: left;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #f3f3f3;
+    height: 10px;
+  }
+  
+  .skills .progress-bar {
+    width: 0;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #34b7a7;
+  }
+  
+  /* Stats Section Styles */
+  .stats {
+    padding: 40px 0;
+  }
+  
+  .stats .stats-item {
+    padding: 30px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats .stats-item span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #34b7a7;
+  }
+  
+  .stats .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+  }
+  
+  /* Testimonials Section Styles */
+  .testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 30px;
+    margin: 40px 30px;
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 8px;
+  }
+  
+  .testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin-top: -60px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #222;
+  }
+  
+  .testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+  }
+  
+  .testimonials .testimonial-item .stars {
+    margin: 10px 0;
+  }
+  
+  .testimonials .testimonial-item .stars i {
+    color: #ffc107;
+    margin: 0 1px;
+  }
+  
+  .testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+  }
+  
+  .testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #34b7a7;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #34b7a7;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: #fff;
+    transition: all 0.5s;
+    padding: 20px 0;
+  }
+  
+  .header.header-scrolled {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+  }
+  
+  /* Navigation Styles */
+  .navmenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navmenu li {
+    position: relative;
+    padding: 10px 20px;
+  }
+  
+  .navmenu a {
+    display: flex;
+    align-items: center;
+    color: #222;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .navmenu a:hover,
+  .navmenu .active {
+    color: #34b7a7;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    padding: 30px 0;
+    background: #fff;
+    border-top: 1px solid #e6e6e6;
+  }
+  
+  .footer .copyright {
+    text-align: center;
+    color: #222;
+  }
+  
+  .footer .credits {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .footer .social-links {
+    margin-top: 20px;
+  }
+  
+  .footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #34b7a7;
+    color: #fff;
+    line-height: 1;
+    padding: 9px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    background: #3dc8b7;
+    text-decoration: none;
+  }
+  
+  /* Scroll Top Button */
+  .scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #34b7a7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    text-decoration: none;
+  }
+  
+  .scroll-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .scroll-top:hover {
+    background: #3dc8b7;
+    color: #fff;
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Preloader */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #34b7a7;
+    border-top-color: #dcf5f2;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991px) {
+    .navmenu {
+      padding: 0;
+    }
+    
+    .navmenu ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    }
+    
+    .navmenu.navbar-mobile {
+      position: fixed;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(9, 9, 9, 0.9);
+      transition: 0.3s;
+      z-index: 999;
+    }
+    
+    .navmenu.navbar-mobile ul {
+      display: block;
+      position: absolute;
+      top: 55px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      padding: 10px 0;
+      border-radius: 8px;
+      background-color: #fff;
+      overflow-y: auto;
+      transition: 0.3s;
+    }
+    
+    .navmenu.navbar-mobile li {
+      padding: 0;
+    }
+    
+    .navmenu.navbar-mobile a {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title h2 {
+      font-size: 28px;
+    }
+    
+    .stats .stats-item {
+      padding: 20px;
+    }
+    
+    .stats .stats-item span {
+      font-size: 30px;
+    }
+    
+    .testimonials .testimonial-item {
+      margin: 30px 20px;
+    }
+  }
+
+  

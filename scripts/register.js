@@ -67,5 +67,23 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     window.location.href = "../Kelly/index.html";
   }
 });
+// Populate currency dropdowns on page load
+fetch('https://v6.exchangerate-api.com/v6/28d80ac21c82ae0f18de0c89/latest/USD')
+  .then(response => response.json())
+  .then(data => {
+    if (data && data.conversion_rates) {
+      const currencies = Object.keys(data.conversion_rates).sort();
+      const baseSelect = document.getElementById("baseCurrency");
+      const targetSelect = document.getElementById("targetCurrency");
+
+      currencies.forEach(currency => {
+        const option1 = new Option(currency, currency);
+        const option2 = new Option(currency, currency);
+        baseSelect.appendChild(option1);
+        targetSelect.appendChild(option2);
+      });
+    }
+  })
+  .catch(err => console.error("Failed to load currencies:", err));
 
 
