@@ -5,8 +5,9 @@ document.getElementById("nextStep1").addEventListener("click", function () {
   const title = document.getElementById("title").value.trim();
   const about = document.getElementById("about").value.trim();
   const password = document.getElementById("password").value.trim();
+  const Phone = document.getElementById("Phone").value.trim();
 
-  if (!fullName || !email || !age || !title || !password) {
+  if (!fullName || !email || !age || !title || !password || !Phone ) {
     alert("Please fill in all fields in Step 1");
     return;
   }
@@ -18,7 +19,8 @@ document.getElementById("nextStep1").addEventListener("click", function () {
     age,
     title,
     about,
-    password
+    password,
+    Phone
   };
 
   // Step 2
@@ -33,7 +35,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
   const user = window.user || {};
 
   // Step 2
-  user.skills = document.getElementById("skills").value.trim();
+  user.skills = document.getElementById('skills').value.split(',').map(skill => skill.trim()),
   user.github = document.getElementById("github").value.trim();
   user.linkedin = document.getElementById("linkedin").value.trim();
   user.city = document.getElementById("city").value.trim();
@@ -62,6 +64,8 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     localStorage.setItem(user.email, JSON.stringify(user));
     localStorage.setItem("loggedInUser", user.email);
     window.user = null;
-    window.location.href = "../templates/portfolio.html";
+    window.location.href = "../Kelly/index.html";
   }
 });
+
+

@@ -9,6 +9,6 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     alert("Invalid email or password");
   } else {
     localStorage.setItem("loggedInUser", email);
-    window.location.href = "../templates/portfolio.html";
+    window.location.href = "../Kelly/index.html";
   }
 });

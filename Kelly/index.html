@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Kelly Bootstrap Template</title>
+  <title>Home Page</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -45,12 +45,10 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="../pages/WeatherApp.html">Weather App</a></li>
           <li><a href="../pages/ExchangeRate.html">Exchange Rate</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="Edit.html">Edit</a></li>
           <li><a href="../pages/login.html">Log-Out</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -66,12 +64,15 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+        <video autoplay muted loop playsinline id="hero-video">
+    <source src="../1723017-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    הדפדפן שלך לא תומך בווידאו.
+  </video>
 
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>Shimon Yossef</h2>
+            <h2 id="userName"></h2>
             <a href="about.html" class="btn-get-started">About Me</a>
           </div>
         </div>
@@ -117,6 +118,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="../Kelly/index.js"></script>
 
 </body>
 

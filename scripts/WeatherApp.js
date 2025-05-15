@@ -1,5 +1,16 @@
-const savedCity = localStorage.getItem("lastCity") || "New York";
 const apiKey = "0df2aa7cbe619482af9d0c7b537112c1";
+
+// שליפת אובייקט המשתמש מה-localStorage
+let userData = null;
+try {
+  userData = JSON.parse(localStorage.getItem("user"));
+} catch (e) {
+  console.warn("Invalid user data in localStorage:", e);
+}
+
+const defaultCity = userData?.city?.trim(); // עיר מהרשמה בלבד
+const savedCity = defaultCity || "New York"; // מתעלם מ-lastCity
+console.log("Using savedCity:", savedCity);
 
 async function fetchWeather(city) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric&lang=en`;
@@ -41,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("searchBtn").addEventListener("click", () => {
     const newCity = document.getElementById("searchInput").value.trim();
     if (newCity) {
-      localStorage.setItem("lastCity", newCity);
+      localStorage.setItem("lastCity", newCity); // נוכל לשמור את זה אם נרצה להשתמש בעתיד
       fetchWeather(newCity);
     }
   });
@@ -56,3 +67,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
